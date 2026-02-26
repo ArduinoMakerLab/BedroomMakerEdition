@@ -90,7 +90,7 @@ void drawGame(Snake& snake) {
   Point food = snake.getFood();
   int foodX = food.x * GRID_SIZE;
   int foodY = food.y * GRID_SIZE;
-  display.fillRect(foodX + ORIGIN_X + BORDER_SIZE, foodY + ORIGIN_Y + BORDER_SIZE, GRID_SIZE, GRID_SIZE, WHITE);
+  display.fillRect(foodX + ORIGIN_X + BORDER_SIZE, foodY + ORIGIN_Y + BORDER_SIZE, GRID_SIZE, GRID_SIZE, WHITE);  //
   display.drawPixel(foodX + ORIGIN_X + BORDER_SIZE, foodY + ORIGIN_Y + BORDER_SIZE, BLACK);
   display.drawPixel(foodX + ORIGIN_X + BORDER_SIZE + (GRID_SIZE - 1), foodY + ORIGIN_Y + BORDER_SIZE, BLACK);
   display.drawPixel(foodX + ORIGIN_X + BORDER_SIZE, foodY + ORIGIN_Y + GRID_SIZE + (GRID_SIZE - 1), BLACK);
